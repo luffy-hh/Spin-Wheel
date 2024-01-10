@@ -1,0 +1,141 @@
+.card {
+  margin: 2rem;
+  position: relative;
+  height: 100%;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.7rem 2.5rem rgba($color: #000000, $alpha: 0.08);
+  @media only screen and (max-width: 37.5em) {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+  .search-box {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    @media only screen and (max-width: 37.5em) {
+      top: 1%;
+    }
+    @media only screen and (max-width: 25em) {
+      position: inherit;
+      margin-left: 5rem;
+    }
+    input {
+      padding: 0.5rem 2rem;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid var(--secondary);
+      @media only screen and (max-width: 25em) {
+        padding: 0.5rem 0.5rem;
+      }
+    }
+    .search-icon {
+      margin-left: -3rem;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    thead {
+      td {
+        color: var(--text-color);
+        font-weight: 600;
+        padding: 1rem;
+        @media only screen and (max-width: 25em) {
+          padding: 1rem 0.2rem;
+        }
+        &:last-child {
+          text-align: end;
+          @media only screen and (max-width: 25em) {
+            text-align: start;
+          }
+        }
+        &:nth-child(2) {
+          text-align: end;
+          @media only screen and (max-width: 25em) {
+            text-align: start;
+          }
+        }
+        &:nth-child(3) {
+          text-align: end;
+          @media only screen and (max-width: 25em) {
+            text-align: start;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        color: var(--gray);
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+        transition: all 0.5s;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:hover {
+          background: var(--primary);
+          color: var(--white);
+          td:last-child {
+            button {
+              box-shadow: 0.3rem 0.3rem 0.6rem
+                rgba($color: #22d3ee, $alpha: 0.5);
+              transform: scale(1.2);
+            }
+          }
+        }
+        td {
+          padding: 1rem;
+          @media only screen and (max-width: 25em) {
+            padding: 1rem 0.2rem;
+          }
+          &:last-child {
+            text-align: end;
+            button {
+              padding: 0.5rem 0.8rem;
+              margin-left: 1rem;
+            }
+            @media only screen and (max-width: 25em) {
+              text-align: start;
+            }
+          }
+          &:nth-child(2) {
+            text-align: end;
+            @media only screen and (max-width: 25em) {
+              text-align: start;
+            }
+          }
+          &:nth-child(3) {
+            text-align: end;
+            @media only screen and (max-width: 25em) {
+              text-align: start;
+            }
+          }
+
+          .status {
+            padding: 2px 4px;
+            color: var(--white);
+            border-radius: 4px;
+            font-size: 1.4rem;
+            font-weight: 500;
+          }
+          .status.available {
+            background: var(--success);
+          }
+          .status.out {
+            background: var(--denied);
+          }
+          .status.set {
+            background: var(--pending);
+          }
+        }
+      }
+    }
+  }
+}

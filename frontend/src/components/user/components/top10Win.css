@@ -1,0 +1,29 @@
+.top-winner {
+  margin: 1rem 0;
+  border: 3px solid var(--wheel-secondary);
+  width: 100%;
+  text-align: center;
+}
+.top-winner h2 {
+  padding: 0.8rem 0;
+  font-size: 2.4rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  background-color: var(--wheel-secondary);
+  box-shadow: inset 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.top-winner .table {
+  padding: 0.3rem 0.2rem;
+}
+.top-winner .table table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--white);
+  font-size: 1.8rem;
+}
+.top-winner .table table tr td {
+  padding: 1rem 0;
+  border: 2px solid var(--gray);
+}
+
+/*# sourceMappingURL=top10Win.css.map */

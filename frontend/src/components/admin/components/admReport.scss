@@ -1,0 +1,98 @@
+.card {
+  margin: 2rem;
+  position: relative;
+  height: 100%;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.7rem 2.5rem rgba($color: #000000, $alpha: 0.08);
+  .search-box {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+
+    input {
+      padding: 0.5rem 2rem;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid var(--secondary);
+    }
+    .search-icon {
+      margin-left: -3rem;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    thead {
+      td {
+        color: var(--text-color);
+        font-weight: 600;
+        padding: 1rem;
+        &:last-child {
+          text-align: end;
+        }
+        &:nth-child(2) {
+          text-align: end;
+        }
+        &:nth-child(3) {
+          text-align: end;
+        }
+        &:nth-child(4) {
+          text-align: end;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        color: var(--gray);
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+        transition: all 0.5s;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:hover {
+          background: var(--primary);
+          color: var(--white);
+        }
+        td {
+          padding: 1rem;
+          &:last-child {
+            text-align: end;
+          }
+          &:nth-child(2) {
+            text-align: end;
+          }
+          &:nth-child(3) {
+            text-align: end;
+          }
+          &:nth-child(4) {
+            text-align: end;
+          }
+
+          .status {
+            padding: 2px 4px;
+            color: var(--white);
+            border-radius: 4px;
+            font-size: 1.4rem;
+            font-weight: 500;
+          }
+          .status.available {
+            background: var(--success);
+          }
+          .status.out {
+            background: var(--denied);
+          }
+          .status.set {
+            background: var(--pending);
+          }
+        }
+      }
+    }
+  }
+}

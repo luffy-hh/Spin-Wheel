@@ -1,0 +1,155 @@
+.rewards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.rewards .create {
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.rewards .create .heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.rewards .create-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  transition: all 0.5s;
+}
+.rewards .create-form .message {
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.08);
+  background-color: var(--pending);
+}
+.rewards .create-form .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.rewards .create-form .form label {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.rewards .create-form .form label input {
+  border: none;
+  border-bottom: 1px solid var(--secondary);
+  outline: none;
+  padding: 1rem 2rem;
+}
+.rewards .create-form .form label input[type=number] {
+  --moz-apperance: textfield;
+}
+.rewards .create-form .form label input::-webkit-outer-spin-button, .rewards .create-form .form label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.rewards .create-form .form label:last-of-type input {
+  background-color: var(--gray);
+  color: var(--white);
+  font-style: italic;
+  border: none;
+  border-radius: 1rem;
+}
+.rewards .list {
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.rewards .list .list-header {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.rewards .list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.rewards .list table thead td {
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 1rem;
+}
+.rewards .list table thead td:last-child {
+  text-align: center;
+}
+.rewards .list table thead td:nth-child(2) {
+  text-align: end;
+}
+.rewards .list table thead td:nth-child(3) {
+  text-align: end;
+}
+.rewards .list table tbody tr {
+  color: var(--gray);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.rewards .list table tbody tr:last-child {
+  border-bottom: none;
+}
+.rewards .list table tbody tr:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+.rewards .list table tbody tr:hover td:last-child button {
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(34, 211, 238, 0.5);
+  transform: scale(1.2);
+}
+.rewards .list table tbody tr td {
+  padding: 1rem;
+}
+.rewards .list table tbody tr td:last-child {
+  text-align: end;
+}
+.rewards .list table tbody tr td:last-child button {
+  padding: 0.3rem 0.6rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+}
+.rewards .list table tbody tr td:nth-child(2) {
+  text-align: end;
+}
+.rewards .list table tbody tr td:nth-child(3) {
+  text-align: end;
+}
+.rewards .list table tbody tr td:nth-child(4) {
+  text-align: center;
+}
+.rewards .list table tbody tr td .status {
+  padding: 2px 4px;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.rewards .list table tbody tr td .status.available {
+  background: var(--success);
+}
+.rewards .list table tbody tr td .status.out {
+  background: var(--denied);
+}
+.rewards .list table tbody tr td .status.set {
+  background: var(--pending);
+}
+
+/*# sourceMappingURL=reward.css.map */

@@ -1,0 +1,50 @@
+.container {
+  max-width: 100%;
+  height: 100vh;
+}
+
+.main {
+  position: absolute;
+  width: calc(100% - 30rem);
+  left: 30rem;
+  min-height: 100vh;
+  background-color: var(--white);
+  transition: all 0.5s;
+  padding: 2rem;
+}
+.main.active {
+  width: calc(100% - 8rem);
+  left: 8rem;
+}
+.main .topbar {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+.main .topbar .toggle {
+  position: relative;
+  min-width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.main .topbar .user {
+  position: relative;
+  padding: 1rem;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+}
+.main .topbar .user-icon {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=role.css.map */

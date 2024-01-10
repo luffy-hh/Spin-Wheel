@@ -1,0 +1,98 @@
+.wheel-wrapper {
+  max-width: 40rem;
+  min-height: 30rem;
+  /* position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+  border-radius: 1.6rem;
+}
+.wheel-wrapper .wheel-container {
+  position: relative;
+  min-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+}
+.wheel-wrapper .wheel-container .wheel {
+  width: 100%;
+}
+.wheel-wrapper .wheel-container .pointer {
+  position: absolute;
+  top: 45%;
+  left: 4%;
+  max-width: 4rem;
+  max-height: 4rem;
+  z-index: 10;
+}
+.wheel-wrapper .wheel-container .labels {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  list-style: none;
+}
+.wheel-wrapper .wheel-container .labels .label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+.wheel-wrapper .wheel-container .labels :first-child {
+  transform: translate(-50%, -50%) rotate(45deg) translate(-250%) rotate(0deg);
+}
+.wheel-wrapper .wheel-container .labels :nth-child(2) {
+  transform: translate(-60%, -70%) rotate(90deg) translate(-250%) rotate(0deg);
+}
+.wheel-wrapper .wheel-container .labels :nth-child(3) {
+  transform: translate(130%, -120%) rotate(270deg) translate(140%) rotate(-135deg);
+}
+.wheel-wrapper .wheel-container .labels :nth-child(4) {
+  transform: translate(130%, 150%) rotate(225deg) translate(80%) rotate(-45deg);
+}
+.wheel-wrapper .wheel-container .labels :nth-child(5) {
+  transform: translate(10%, 280%) rotate(360deg) translate(100%) rotate(-135deg);
+}
+.wheel-wrapper .wheel-container .labels :nth-child(6) {
+  transform: translate(30%, 280%) rotate(315deg) translate(-100%) rotate(-45deg);
+}
+.wheel-wrapper .wheel-container .labels :nth-child(7) {
+  transform: translate(-30%, -80%) rotate(135deg) translate(250%) rotate(180deg);
+}
+.wheel-wrapper .wheel-container .labels :last-child {
+  transform: translate(-20%, -50%) rotate(180deg) translate(250%) rotate(180deg);
+}
+.wheel-wrapper .button-container {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wheel-wrapper .button-container h4 {
+  color: var(--wheel-secondary);
+  text-transform: uppercase;
+}
+.wheel-wrapper .button-container .form {
+  display: flex;
+  position: relative;
+}
+.wheel-wrapper .button-container .form input {
+  background: transparent;
+  padding: 0.5rem 0.8rem;
+  width: 15rem;
+  color: var(--white);
+  font-size: 1.6rem;
+  border: 3px solid var(--wheel-secondary);
+  border-right: none;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.wheel-wrapper .button-container .form button {
+  margin-left: -2rem;
+  background: var(--wheel-secondary);
+  border: 3px solid var(--wheel-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: inset 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=spinWheel.css.map */

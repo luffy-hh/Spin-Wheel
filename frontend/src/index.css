@@ -1,0 +1,39 @@
+:root {
+  --text-color: #231f20;
+  --black: #1c1917;
+  --gray: #a4a3a3;
+  --primary: #3730a3;
+  --secondary: #22d3ee;
+  --white: #ffffff;
+  --success: #4ade80;
+  --denied: #ef4444;
+  --pending: #e9b10a;
+  --wheel-secondary: #fde047;
+  --inset: #450a0a;
+  --wheel-primary: #991b1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,63 @@
+.outer-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .inner-container {
+    // background-image: url("./imgs/Background.png");
+    min-width: 100%;
+    min-height: calc(100vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 37.5em) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-gp {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      position: relative;
+      margin-bottom: 20%;
+      @media only screen and (min-height: 37.5em) {
+        margin-bottom: 20vh;
+      }
+      @media only screen and (min-height: 50em) {
+        margin-bottom: 25vh;
+      }
+      @media only screen and (min-height: 56.25em) {
+        margin-bottom: 30vh;
+      }
+      @media only screen and (min-width: 37.5em) {
+        min-width: 50%;
+        margin-bottom: 0;
+      }
+
+      .btn-link {
+        width: 100%;
+        height: auto;
+        transition: all 0.5s;
+        &:active {
+          transform: scale(0.9, 0.9);
+        }
+        .spin-btn,
+        .batman-btn {
+          margin: 0 auto;
+          max-width: 80%;
+          height: 15rem;
+          background-size: 100% 100%;
+          @media only screen and (min-width: 37.5em) {
+            height: 10rem;
+          }
+          //   background-image: url("./imgs/BatSpinButtom.png");
+        }
+      }
+    }
+  }
+}

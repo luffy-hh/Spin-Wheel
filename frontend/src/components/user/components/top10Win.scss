@@ -1,0 +1,29 @@
+.top-winner {
+  margin: 1rem 0;
+  // border: 3px solid var(--wheel-secondary);
+  background-image: url("../../../assets/img/TopTenWinnerListBox.png");
+  background-size: 100% 100%;
+  max-width: 97vw;
+  text-align: center;
+  position: relative;
+  padding: 0.3rem;
+  padding-top: 6.8rem;
+
+  .table {
+    z-index: 10;
+    padding: 0.3rem 0.2rem;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: var(--white);
+      font-size: 1.8rem;
+      tr {
+        td {
+          width: 50%;
+          padding: 1rem 0;
+          border: 2px solid var(--gray);
+        }
+      }
+    }
+  }
+}

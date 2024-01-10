@@ -1,0 +1,46 @@
+.wheel-nav-container {
+  max-width: 100vw;
+  max-height: 20vh;
+
+  position: relative;
+  // background-color: var(--wheel-primary);
+  // border-bottom: 5px solid var(--wheel-secondary);
+
+  .wheel-nav {
+    padding: 1rem;
+    min-height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../../../assets/img/TopBar.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    font-size: 3.2rem;
+
+    // border-bottom: 3px solid rgba($color: #000000, $alpha: 0.8);
+    .menu-icon {
+      background-image: url("../../../assets/img/MenuCircle.png");
+      z-index: 10;
+      background-size: 100% 100%;
+      width: 4rem;
+      height: 4rem;
+      // padding-top: 0.4rem;
+      // font-size: 3rem;
+      // color: var(--wheel-secondary);
+      // width: 4rem;
+      // height: 4rem;
+      // border-radius: 50%;
+      // text-align: center;
+      // background-color: var(--inset);
+      // box-shadow: inset 1rem 1rem 2rem rgba($color: #000000, $alpha: 0.08);
+    }
+    .lang-icon {
+      background-image: url("../../../assets/img/MyanmarCircle.png");
+      z-index: 10;
+      background-size: 100% 100%;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

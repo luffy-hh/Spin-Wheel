@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a352789.css",
+    "main.js": "/static/js/main.0c896066.js",
+    "static/media/BatmanPng.png": "/static/media/BatmanPng.3b178513c9084e62b687.png",
+    "static/media/555mix.png": "/static/media/555mix.539a7a24eeb10040bc9a.png",
+    "static/media/555mixDownload.png": "/static/media/555mixDownload.adce98087e73c3b37e79.png",
+    "static/media/2.png": "/static/media/2.b85198c59eb1dce254be.png",
+    "static/media/1.png": "/static/media/1.1acc2ab126ae9f1dc972.png",
+    "static/media/ShanWorldPng.png": "/static/media/ShanWorldPng.0caa7a4d37de4889348f.png",
+    "static/media/LivePng.png": "/static/media/LivePng.d9b8feea2ce0aaebb432.png",
+    "static/media/DailyaPng.png": "/static/media/DailyaPng.4c39ebd67f073d0909e9.png",
+    "static/media/SpinWheel.png": "/static/media/SpinWheel.db289c03b01a78b5398e.png",
+    "static/media/3.png": "/static/media/3.7fe7fe969d755efd2538.png",
+    "static/media/4.png": "/static/media/4.1f9345cdc4068824f707.png",
+    "static/media/IdragonPng.png": "/static/media/IdragonPng.1d9af7db56559601f42d.png",
+    "static/media/spin(2).mp3": "/static/media/spin(2).f80ee38762a50a133144.mp3",
+    "static/media/CongratulationSound2.mp3": "/static/media/CongratulationSound2.c4330fd8ea408565d824.mp3",
+    "static/media/MyanmarCircle.png": "/static/media/MyanmarCircle.dcdde3ca8af6700b9d79.png",
+    "static/media/ViberCircle.png": "/static/media/ViberCircle.6751cc1383aeffb7c759.png",
+    "static/media/TopTenWinnerListBox.png": "/static/media/TopTenWinnerListBox.8fdf1959118683edd54e.png",
+    "static/media/SpinPointer.png": "/static/media/SpinPointer.823791d561a6f219f503.png",
+    "static/media/TelegramCircle.png": "/static/media/TelegramCircle.3c295c17b8b2fe6cf02e.png",
+    "static/media/FacebookCircle.png": "/static/media/FacebookCircle.4f1444df74500a638f9c.png",
+    "static/media/TopBar.png": "/static/media/TopBar.b9ea68b56c900487627a.png",
+    "static/media/MenuCircle.png": "/static/media/MenuCircle.f65639e5cead41e85b8b.png",
+    "index.html": "/index.html",
+    "main.7a352789.css.map": "/static/css/main.7a352789.css.map",
+    "main.0c896066.js.map": "/static/js/main.0c896066.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a352789.css",
+    "static/js/main.0c896066.js"
+  ]
+}

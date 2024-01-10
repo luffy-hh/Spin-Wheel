@@ -1,0 +1,73 @@
+.termAndAgent {
+  max-width: 100vw;
+  @media only screen and (min-width: 37.5em) {
+    margin-top: 8rem;
+    grid-column: 1 / 3;
+  }
+  .btn-group {
+    // margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    .ui-btn {
+      background-color: var(--wheel-secondary);
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      // box-shadow: none;
+      outline: none;
+      border: none;
+      transition: all 0.5s;
+
+      &:active {
+        transform: scale(0.9, 0.9);
+      }
+    }
+    .btn-terms {
+      margin-right: 1rem;
+    }
+  }
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .agent-list {
+    margin: 1rem auto;
+    width: 90%;
+    transition: all 0.5s;
+    .table {
+      color: var(--white);
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1.8rem;
+
+      tr {
+        td {
+          padding: 1rem 1rem;
+          border: 2px solid var(--gray);
+        }
+      }
+    }
+  }
+  .terms {
+    //   max-width: 100%;
+    border: 2px solid var(--wheel-secondary);
+    color: var(--white);
+    margin: 0 2rem;
+    padding: 2rem 2rem 0.5rem;
+    font-size: 1.8rem;
+    transition: all 0.5s;
+    &-text {
+      word-wrap: break-word;
+      line-height: 1.8;
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+        // border-bottom: 2px solid var(--wheel-secondary);
+      }
+    }
+  }
+}

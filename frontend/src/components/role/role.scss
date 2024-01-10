@@ -1,0 +1,62 @@
+.container {
+  max-width: 100%;
+  height: 100vh;
+}
+
+.role-main {
+  position: absolute;
+  width: calc(100% - 30rem);
+  left: 30rem;
+  min-height: 100vh;
+  background-color: var(--white);
+  transition: all 0.5s;
+  padding: 2rem;
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+    left: 0;
+  }
+  &.active {
+    width: calc(100% - 8rem);
+    left: 8rem;
+    // @media only screen and (max-width: 62.94em) {
+    //   left: 30rem;
+    // }
+  }
+
+  .topbar {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 2rem rgba($color: #000000, $alpha: 0.08);
+
+    .toggle {
+      position: relative;
+      min-width: 6rem;
+      height: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+    }
+
+    .user {
+      position: relative;
+      padding: 1rem;
+      width: 10rem;
+      height: 6rem;
+      text-align: center;
+
+      &-icon {
+        display: inline-block;
+        font-size: 1.8rem;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+}
