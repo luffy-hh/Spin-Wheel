@@ -74,255 +74,339 @@
         }
 
         :first-child {
-          transform: translate(-50%, -50%) rotate(22.5deg) translate(-200%) rotate(0deg);
-          @media only screen and (max-width: 22.5em) {
-            transform: translate(-50%, -50%) rotate(22.5deg) translate(-240%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(22.5deg) translate(-200%)
+            rotate(0deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(-50%, -50%) rotate(22.5deg) translate(-200%)
+              rotate(0deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-50%, -50%) rotate(22.5deg) translate(-270%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(22.5deg) translate(-250%)
+              rotate(0deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-50%, -50%) rotate(22.5deg) translate(-220%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(22.5deg) translate(-220%)
+              rotate(0deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-50%, -50%) rotate(22.5deg) translate(-180%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(22.5deg) translate(-180%)
+              rotate(0deg);
           }
         }
 
         :nth-child(2) {
-          transform: translate(-90%, -160%) rotate(45deg) translate(-230%) rotate(0deg);
-          @media only screen and (max-width: 22.5em) {
-            transform: translate(-90%, -160%) rotate(45deg) translate(-280%) rotate(0deg);
+          transform: translate(-90%, -160%) rotate(45deg) translate(-240%)
+            rotate(0deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(-90%, -160%) rotate(45deg) translate(-250%)
+              rotate(0deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-90%, -160%) rotate(45deg) translate(-320%) rotate(0deg);
+            transform: translate(-90%, -160%) rotate(45deg) translate(-320%)
+              rotate(0deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-90%, -160%) rotate(45deg) translate(-260%) rotate(0deg);
+            transform: translate(-90%, -160%) rotate(45deg) translate(-280%)
+              rotate(0deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-90%, -140%) rotate(45deg) translate(-200%) rotate(0deg);
+            transform: translate(-90%, -140%) rotate(45deg) translate(-220%)
+              rotate(0deg);
           }
         }
 
         :nth-child(3) {
-          transform: translate(-185%, 10%) rotate(292.5deg) translate(180%) rotate(135deg);
+          transform: translate(-185%, 10%) rotate(292.5deg) translate(180%)
+            rotate(135deg);
 
-          @media only screen and (max-width: 22.25em) {
-            transform: translate(-200%, -20%) rotate(292.5deg) translate(200%) rotate(135deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(-190%, 20%) rotate(292.5deg) translate(190%)
+              rotate(135deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-230%, 80%) rotate(292.5deg) translate(250%) rotate(135deg);
+            transform: translate(-230%, 80%) rotate(292.5deg) translate(250%)
+              rotate(135deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-200%, 40%) rotate(292.5deg) translate(200%) rotate(135deg);
+            transform: translate(-210%, 80%) rotate(292.5deg) translate(220%)
+              rotate(135deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-145%, -180%) rotate(292.5deg) translate(100%) rotate(135deg);
+            transform: translate(-145%, -180%) rotate(292.5deg) translate(100%)
+              rotate(135deg);
           }
         }
 
         :nth-child(4) {
-          transform: translate(-158%, -120%) rotate(135deg) translate(-150%) rotate(-45deg);
-        @media only screen and (max-width: 22.5em){
-          transform: translate(-158%, -220%) rotate(135deg) translate(-150%) rotate(-45deg);
-        }
+          transform: translate(-158%, -120%) rotate(135deg) translate(-150%)
+            rotate(-45deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(-158%, -120%) rotate(135deg) translate(-150%)
+              rotate(-45deg);
+          }
           @media only screen and (min-width: 25em) {
-            transform: translate(-250%, 140%) rotate(135deg) translate(-280%) rotate(-45deg);
+            transform: translate(-250%, 140%) rotate(135deg) translate(-280%)
+              rotate(-45deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-230%, 150%) rotate(135deg) translate(-250%) rotate(-45deg);
+            transform: translate(-230%, 150%) rotate(135deg) translate(-250%)
+              rotate(-45deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-228%, 300%) rotate(135deg) translate(-250%) rotate(-45deg);
+            transform: translate(-228%, 300%) rotate(135deg) translate(-250%)
+              rotate(-45deg);
           }
         }
 
         :nth-child(5) {
-          transform: translate(160%, 80%) rotate(235deg) translate(260%) rotate(235deg);
-          @media only screen and (max-width: 22.5em) {
-            transform: translate(220%, 100%) rotate(235deg) translate(320%) rotate(235deg);
+          transform: translate(160%, 0%) rotate(235deg) translate(240%)
+            rotate(235deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(180%, 100%) rotate(235deg) translate(280%)
+              rotate(235deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(210%, -30%) rotate(235deg) translate(300%) rotate(235deg);
+            transform: translate(210%, -30%) rotate(235deg) translate(300%)
+              rotate(235deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(200%, 100%) rotate(235deg) translate(300%) rotate(235deg);
+            transform: translate(200%, 100%) rotate(235deg) translate(300%)
+              rotate(235deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(155%, 100%) rotate(235deg) translate(250%) rotate(235deg);
+            transform: translate(155%, 100%) rotate(235deg) translate(250%)
+              rotate(235deg);
           }
         }
 
         :nth-child(6) {
-          transform: translate(150%, -100%) rotate(90deg) translate(-180%) rotate(45deg);
-          @media only screen and (max-width: 22.5em) {
-            transform: translate(200%, -100%) rotate(90deg) translate(-220%) rotate(45deg);
+          transform: translate(150%, -100%) rotate(90deg) translate(-180%)
+            rotate(45deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(160%, -140%) rotate(90deg) translate(-180%)
+              rotate(45deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(220%, -140%) rotate(90deg) translate(-250%) rotate(45deg);
+            transform: translate(220%, -140%) rotate(90deg) translate(-250%)
+              rotate(45deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(180%, -20%) rotate(90deg) translate(-250%) rotate(45deg);
+            transform: translate(180%, -20%) rotate(90deg) translate(-250%)
+              rotate(45deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(140%, 120%) rotate(90deg) translate(-280%) rotate(45deg);
+            transform: translate(140%, 120%) rotate(90deg) translate(-280%)
+              rotate(45deg);
           }
         }
 
         :nth-child(7) {
-          transform: translate(10%, -150%) rotate(335deg) translate(90%) rotate(180deg);
+          transform: translate(10%, -150%) rotate(335deg) translate(90%)
+            rotate(180deg);
           @media only screen and (max-width: 18.75em) {
-            transform: translate(15%, -160%) rotate(335deg) translate(90%) rotate(180deg);
+            transform: translate(15%, -160%) rotate(335deg) translate(90%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-20%, -100%) rotate(335deg) translate(180%) rotate(180deg);
+            transform: translate(-20%, -100%) rotate(335deg) translate(180%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-20%, -90%) rotate(335deg) translate(150%) rotate(180deg);
+            transform: translate(-20%, -90%) rotate(335deg) translate(150%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-20%, -80%) rotate(335deg) translate(110%) rotate(180deg);
+            transform: translate(-20%, -80%) rotate(335deg) translate(110%)
+              rotate(180deg);
           }
-
         }
 
         :nth-child(8) {
-          transform: translate(10%, -80%) rotate(0deg) translate(160%) rotate(180deg);
+          transform: translate(10%, -80%) rotate(0deg) translate(160%)
+            rotate(180deg);
           @media only screen and (max-width: 18.75em) {
-            transform: translate(20%, -80%) rotate(0deg) translate(160%) rotate(180deg);
+            transform: translate(20%, -80%) rotate(0deg) translate(160%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-20%, -80%) rotate(0deg) translate(250%) rotate(180deg);
+            transform: translate(-20%, -80%) rotate(0deg) translate(250%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-20%, -80%) rotate(0deg) translate(220%) rotate(180deg);
+            transform: translate(-20%, -80%) rotate(0deg) translate(220%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-20%, -50%) rotate(0deg) translate(160%) rotate(180deg);
+            transform: translate(-20%, -50%) rotate(0deg) translate(160%)
+              rotate(180deg);
           }
         }
 
         :nth-child(9) {
-          transform: translate(-40%, -60%) rotate(22.5deg) translate(160%) rotate(180deg);
+          transform: translate(-40%, -60%) rotate(22.5deg) translate(160%)
+            rotate(180deg);
           @media only screen and (max-width: 18.75em) {
-            transform: translate(-35%, -60%) rotate(22.5deg) translate(180%) rotate(180deg);
+            transform: translate(-35%, -60%) rotate(22.5deg) translate(180%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-30%, -50%) rotate(22.5deg) translate(200%) rotate(180deg);
+            transform: translate(-30%, -50%) rotate(22.5deg) translate(200%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-30%, -50%) rotate(22.5deg) translate(180%) rotate(180deg);
+            transform: translate(-30%, -50%) rotate(22.5deg) translate(180%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-30%, -30%) rotate(22.5deg) translate(130%) rotate(180deg);
+            transform: translate(-30%, -30%) rotate(22.5deg) translate(130%)
+              rotate(180deg);
           }
         }
 
         :nth-child(10) {
-          transform: translate(180%, 180%) rotate(337.5deg) translate(-120%) rotate(247.5deg);
+          transform: translate(20%, 50%) rotate(45deg) translate(300%)
+            rotate(0deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(20%, 50%) rotate(45deg) translate(320%)
+              rotate(0deg);
+          }
           @media only screen and (min-width: 25em) {
-            transform: translate(250%, 200%) rotate(337.5deg) translate(-170%) rotate(247.5deg);
+            transform: translate(20%, 50%) rotate(45deg) translate(360%)
+              rotate(0deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(130%, 280%) rotate(337.5deg) translate(-60%) rotate(247.5deg);
+            transform: translate(20%, 50%) rotate(45deg) translate(340%)
+              rotate(0deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(120%, 180%) rotate(337.5deg) translate(-80%) rotate(247.5deg);
+            transform: translate(20%, 50%) rotate(45deg) translate(260%)
+              rotate(0deg);
           }
         }
 
         :nth-child(11) {
-          transform: translate(45%, 90%) rotate(112.5deg) translate(100%) rotate(135deg);
+          transform: translate(40%, 60%) rotate(112.5deg) translate(100%)
+            rotate(135deg);
           @media only screen and (max-width: 18.75em) {
-            transform: translate(40%, 120%) rotate(112.5deg) translate(90%) rotate(135deg);
+            transform: translate(40%, 120%) rotate(112.5deg) translate(90%)
+              rotate(135deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(70%, 100%) rotate(112.5deg) translate(130%) rotate(135deg);
+            transform: translate(55%, 20%) rotate(112.5deg) translate(130%)
+              rotate(135deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(35%, 160%) rotate(112.5deg) translate(80%) rotate(135deg);
+            transform: translate(35%, 160%) rotate(112.5deg) translate(80%)
+              rotate(135deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(35%, 80%) rotate(112.5deg) translate(90%) rotate(135deg);
+            transform: translate(30%, 60%) rotate(112.5deg) translate(90%)
+              rotate(135deg);
           }
         }
 
         :nth-child(12) {
-          transform: translate(-190%, 360%) rotate(225deg) translate(-200%) rotate(45deg);
+          transform: translate(-120%, 280%) rotate(225deg) translate(-100%)
+            rotate(45deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(-120%, 250%) rotate(225deg) translate(-100%)
+              rotate(45deg);
+          }
           @media only screen and (min-width: 25em) {
-            transform: translate(-260%, 380%) rotate(225deg) translate(-300%) rotate(45deg);
+            transform: translate(-260%, -120%) rotate(225deg) translate(-300%)
+              rotate(45deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-247%, 300%) rotate(225deg) translate(-280%) rotate(45deg);
+            transform: translate(-247%, -140%) rotate(225deg) translate(-280%)
+              rotate(45deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-225%, 280%) rotate(225deg) translate(-250%) rotate(45deg);
+            transform: translate(-225%, -140%) rotate(225deg) translate(-250%)
+              rotate(45deg);
           }
         }
 
         :nth-child(13) {
-          transform: translate(-180%, -120%) rotate(67.5deg) translate(180%) rotate(225deg);
+          transform: translate(-220%, 120%) rotate(67.5deg) translate(180%)
+            rotate(225deg);
           @media only screen and (max-width: 18.75em) {
-            transform: translate(-180%, 50%) rotate(67.5deg) translate(160%) rotate(225deg);
+            transform: translate(-200%, 140%) rotate(67.5deg) translate(160%)
+              rotate(225deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-200%, -80%) rotate(67.5deg) translate(200%) rotate(225deg);
+            transform: translate(-230%, 120%) rotate(67.5deg) translate(200%)
+              rotate(225deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-180%, -100%) rotate(67.5deg) translate(180%) rotate(225deg);
+            transform: translate(-220%, 120%) rotate(67.5deg) translate(180%)
+              rotate(225deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-180%, -190%) rotate(67.5deg) translate(190%) rotate(225deg);
+            transform: translate(-210%, 40%) rotate(67.5deg) translate(190%)
+              rotate(225deg);
           }
         }
 
         :nth-child(14) {
-          transform: translate(-160%, -100%) rotate(292.5deg) translate(-230%) rotate(22.5deg);
+          transform: translate(-160%, -100%) rotate(292.5deg) translate(-230%)
+            rotate(22.5deg);
           @media only screen and (max-width: 18.75em) {
-            transform: translate(-180%, -80%) rotate(292.5deg) translate(-260%) rotate(22.5deg);
+            transform: translate(-170%, -40%) rotate(292.5deg) translate(-200%)
+              rotate(22.5deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-180%, -100%) rotate(292.5deg) translate(-280%) rotate(22.5deg);
+            transform: translate(-160%, -160%) rotate(292.5deg) translate(-280%)
+              rotate(22.5deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-140%, -220%) rotate(292.5deg) translate(-300%) rotate(22.5deg);
+            transform: translate(-140%, -220%) rotate(292.5deg) translate(-300%)
+              rotate(22.5deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-120%, -220%) rotate(292.5deg) translate(-280%) rotate(22.5deg);
+            transform: translate(-120%, -220%) rotate(292.5deg) translate(-280%)
+              rotate(22.5deg);
           }
         }
 
         :nth-child(15) {
-          transform: translate(20%, -150%) rotate(157.5deg) translate(240%) rotate(180deg);
+          transform: translate(20%, -150%) rotate(157.5deg) translate(240%)
+            rotate(180deg);
           @media only screen and (max-width: 18.75em) {
-            transform: translate(30%, -160%) rotate(157.5deg) translate(280%) rotate(180deg);
+            transform: translate(20%, -160%) rotate(157.5deg) translate(240%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-20%, -100%) rotate(157.5deg) translate(235%) rotate(180deg);
+            transform: translate(-20%, -100%) rotate(157.5deg) translate(220%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(-20%, -90%) rotate(157.5deg) translate(200%) rotate(180deg);
+            transform: translate(-20%, -90%) rotate(157.5deg) translate(200%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(-20%, -80%) rotate(157.5deg) translate(180%) rotate(180deg);
+            transform: translate(-20%, -80%) rotate(157.5deg) translate(180%)
+              rotate(180deg);
           }
-
         }
 
         :last-child {
-          transform: translate(-20%, -55%) rotate(180deg) translate(140%) rotate(180deg);
-          @media only screen and (max-width: 22.5em) {
-            transform: translate(-40%, -65%) rotate(180deg) translate(140%) rotate(180deg);
+          transform: translate(-20%, -55%) rotate(180deg) translate(150%)
+            rotate(180deg);
+          @media only screen and (max-width: 18.75em) {
+            transform: translate(-40%, -65%) rotate(180deg) translate(130%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 25em) {
-            transform: translate(-10%, -55%) rotate(180deg) translate(190%) rotate(180deg);
+            transform: translate(-10%, -55%) rotate(180deg) translate(190%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 31.25em) {
-            transform: translate(10%, -50%) rotate(180deg) translate(180%) rotate(180deg);
+            transform: translate(10%, -50%) rotate(180deg) translate(190%)
+              rotate(180deg);
           }
           @media only screen and (min-width: 37.5em) {
-            transform: translate(0%, -50%) rotate(180deg) translate(150%) rotate(180deg);
+            transform: translate(0%, -50%) rotate(180deg) translate(150%)
+              rotate(180deg);
           }
         }
       }
