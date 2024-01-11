@@ -137,6 +137,7 @@ export const StateContextProvider = ({ children }) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(dataObj),
     });
@@ -160,6 +161,7 @@ export const StateContextProvider = ({ children }) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(dataObj),
     });
@@ -252,7 +254,7 @@ export const StateContextProvider = ({ children }) => {
       method: "GET",
     });
     const data = await res.json();
-    // console.log(data.result);
+    console.log(data);
     const text = data?.data[0]?.text;
     text && setMarquee(text);
   }
@@ -264,11 +266,12 @@ export const StateContextProvider = ({ children }) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(marqueeObj),
     });
     const data = await res.json();
-    //console.log(data.msg);
+    console.log(data);
     await fetchMarquee();
   }
 
