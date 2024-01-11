@@ -178,7 +178,7 @@ export const StateContextProvider = ({ children }) => {
     data.data.length > 0 && setUiAgent(data.data);
     if (data.err) {
       alert(data.msg);
-      console.log(data.err, data.msg);
+      //console.log(data.err, data.msg);
     }
   }
 
@@ -254,7 +254,7 @@ export const StateContextProvider = ({ children }) => {
       method: "GET",
     });
     const data = await res.json();
-    console.log(data);
+    //console.log(data);
     const text = data?.data[0]?.text;
     text && setMarquee(text);
   }
@@ -271,7 +271,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify(marqueeObj),
     });
     const data = await res.json();
-    console.log(data);
+    //console.log(data);
     await fetchMarquee();
   }
 
@@ -358,9 +358,9 @@ export const StateContextProvider = ({ children }) => {
   // delete an ads
   async function deleteAds(id) {
     try {
-      console.log(id);
+      //console.log(id);
       const obj = { id: id };
-      console.log(obj);
+      //console.log(obj);
       const res = await fetch(baseUrl + "/ads/", {
         method: "DELETE",
         headers: {
@@ -387,7 +387,7 @@ export const StateContextProvider = ({ children }) => {
       const dataArr = await res.json();
 
       const allAds = dataArr.data;
-      console.log(dataArr);
+      //console.log(dataArr);
       setApkAdsArr(allAds);
       const boxAds1 =
         allAds.length > 0 && allAds.find((ads) => ads.name === "boxad1");
@@ -449,7 +449,7 @@ export const StateContextProvider = ({ children }) => {
       }),
     });
     const data = await res.json();
-    console.log(data);
+    //console.log(data);
     await fetchLuckyData();
     await fetchRewardData();
   }
@@ -487,7 +487,7 @@ export const StateContextProvider = ({ children }) => {
           // console.log(data.data.allLuckyNumber);
           setLuckyData(data.data.allLuckyNumber);
         } else {
-          console.log(data.message);
+          // console.log(data.message);
           alert(data.message);
         }
       } else {
