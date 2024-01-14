@@ -45,11 +45,13 @@ const findLucky = async (id) => {
 //   return await Reward.findById(id);``
 // };
 // get related report by id
+// @ access agent
+// Get v1.1/admin/reportForAgent
 exports.getReportWithAgId = expressAsyncHandler(async (req, res, next) => {
   try {
     const reports = await Report.find({
       agent: req.user.id,
-    });
+    }).sort({ requested: -1 });
 
     if (reports && reports.length > 0) {
       const returnReports = await Promise.all(
