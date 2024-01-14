@@ -3,10 +3,10 @@ import { createContext } from "react";
 
 const StateContext = createContext();
 
-// https://aphoegyi.com:5000
+// https://aphoegyi.com
 // http://localhost:5000
 
-const baseUrl = "https://aphoegyi.com/v1.1";
+const baseUrl = "http://localhost:5000/v1.1";
 
 export const StateContextProvider = ({ children }) => {
   const [loadingStatus, setLoadingStatus] = useState(false);

@@ -21,8 +21,9 @@ exports.createReport = async (luckyNumber, reward, agent, requested) => {
 // GET v1.1/admin/allReports
 exports.getAllReport = expressAsyncHandler(async (req, res, next) => {
   try {
-    const allReports = await Report.find({});
+    const allReports = await Report.find({}).sort({ requested: -1 });
     if (allReports && allReports.length > 0) {
+      console.log(allReports);
       res.status(200).json({
         status: "succeed",
         allReports,
@@ -56,7 +57,7 @@ exports.getReportWithAgId = expressAsyncHandler(async (req, res, next) => {
           const luckyNumber = await LuckyNumbers.findById(rp.luckyNumber);
           const reward =
             luckyNumber.redeemCodeStatus === "Out"
-              ?await Reward.findById(rp.reward)
+              ? await Reward.findById(rp.reward)
               : null;
 
           // console.log(luckyNumber, reward);
@@ -91,18 +92,21 @@ exports.deleteReport = async (deletedRewardId) => {
   const deletedReport = await Report.deleteMany({ reward: deletedRewardId });
   return deletedReport;
 };
-exports.updateReport = expressAsyncHandler(async (req,res,next)=>{
+exports.updateReport = expressAsyncHandler(async (req, res, next) => {
   try {
-    const updatedReport = await Report.findByIdAndUpdate(req.body.id,{
-      draw:true
-    },{new:true})
+    const updatedReport = await Report.findByIdAndUpdate(
+      req.body.id,
+      {
+        draw: true,
+      },
+      { new: true }
+    );
     // console.log(updatedReport)
     res.status(200).json({
-      status:'succeed',
-      data:updatedReport
-    })
-  }catch (e) {
-    throw new Error(e)
+      status: "succeed",
+      data: updatedReport,
+    });
+  } catch (e) {
+    throw new Error(e);
   }
-})
-
+});
