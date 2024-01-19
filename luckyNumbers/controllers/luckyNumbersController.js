@@ -303,17 +303,23 @@ exports.makeLuckyOut = expressAsyncHandler(async (req, res, next) => {
 //post /v1.1/luckyNumbers/fromUi
 exports.checkLuckyNumber = expressAsyncHandler(async (req, res, next) => {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const exist = await LuckyNumbers.findOne({ redeemCode: req.body.number });
-    console.log(exist);
+    // console.log(exist);
     if (exist && exist.redeemCodeStatus !== "Out") {
       const userLucky = await LuckyNumbers.findOne({
         redeemCode: req.body.number,
       }).populate("rewardId");
-      console.log(userLucky);
+      const AllRewards = await Reward.find({});
+      console.log(AllRewards[8]._id.toString()===userLucky.rewardId._id.toString())
+      const index = AllRewards.findIndex(
+          (reward)=>  reward._id.toString() === userLucky?.rewardId?._id.toString()
+      );
+      console.log(index);
       res.status(200).json({
         status: "succeed",
         data: userLucky,
+        deg: 18000 - ( index+ 1)* 22.5,
       });
     } else {
       res.status(200).json({

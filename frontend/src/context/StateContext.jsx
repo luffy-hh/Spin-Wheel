@@ -6,7 +6,7 @@ const StateContext = createContext();
 // https://aphoegyi.com
 // http://localhost:5000
 
-const baseUrl = "http://localhost:5000/v1.1";
+const baseUrl = "https://aphoegyi.com/v1.1";
 
 export const StateContextProvider = ({ children }) => {
   const [loadingStatus, setLoadingStatus] = useState(false);
@@ -62,13 +62,13 @@ export const StateContextProvider = ({ children }) => {
   const [uiAgent, setUiAgent] = useState([]);
   const [policy, setPolicy] = useState("");
 
-  // console.log(marquee);
-  // console.log(loginUser);
+  //
+  //
 
-  // update report i think
+  // update report I think
   // async function sendData() {
   //   const uptData = { reward: userReward, lucky: usedLucky };
-  //   // console.log(uptData);
+  //   //
   //   const res = await fetch(baseUrl + "/update_data", {
   //     method: "POST",
   //     headers: {
@@ -77,7 +77,7 @@ export const StateContextProvider = ({ children }) => {
   //     body: JSON.stringify(uptData),
   //   });
   //   const data = await res.json();
-  //   // console.log(data.message);
+  //   // message);
   //   fetchReportsForAdmin();
   // }
 
@@ -91,31 +91,24 @@ export const StateContextProvider = ({ children }) => {
         body: JSON.stringify({ number: enteredLucky }),
       });
       const data = await res.json();
+      //
 
       if (data.message) {
         alert(data.message);
       } else {
-        // console.log(userReward);
-        let randomReward;
-        const index = uiReward.findIndex(
-          (item) => item._id === data.data.rewardId?._id
-        );
-        // console.log(data.data.rewardId._id);
-        // console.log(uiReward, index);
-        const randomDeg = 18000 - (index + 1) * 22.5;
-        setDeg(randomDeg);
+        setDeg(data.deg)
         setUsedLucky(data.data);
         setUserReward(data.data.rewardId);
-        // console.log(data, randomDeg);
+        //  randomDeg);
       }
     } catch (e) {
-      // console.log(e);
+
       alert(e.message);
     }
   }
 
   function rotate() {
-    //console.log(deg);
+
     document.querySelector(".wheel-img").style.transform = `rotate(${deg}deg)`;
     document.querySelector(".wheel-img").style.transition =
       "all 10s ease-in-out";
@@ -142,7 +135,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify(dataObj),
     });
     const data = await res.json();
-    //console.log(data);
+    //
     await fetchTerms();
   }
 
@@ -150,7 +143,7 @@ export const StateContextProvider = ({ children }) => {
   async function fetchTerms() {
     const res = await fetch(baseUrl + "/uiControl/terms");
     const data = await res.json();
-    // console.log(data.data);
+    // data);
     data.data.length > 0 && setPolicy(data.data[0].terms);
   }
 
@@ -166,7 +159,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify(dataObj),
     });
     const data = await res.json();
-    // console.log(data);
+    //
     await fetchUiAgents();
   }
 
@@ -174,11 +167,11 @@ export const StateContextProvider = ({ children }) => {
   async function fetchUiAgents() {
     const res = await fetch(baseUrl + "/uiControl/uiAgent");
     const data = await res.json();
-    // console.log(data);
+    //
     data.data.length > 0 && setUiAgent(data.data);
     if (data.err) {
       alert(data.msg);
-      //console.log(data.err, data.msg);
+      //err, data.msg);
     }
   }
 
@@ -188,7 +181,7 @@ export const StateContextProvider = ({ children }) => {
       method: "GET",
     });
     const data = await res.json();
-    // console.log(data, "top 10");
+    //  "top 10");
     const top10AllData = data.data;
     const top1 = top10AllData.find((data) => data.top === "top1" || null);
     const top2 = top10AllData.find((data) => data.top === "top2" || null);
@@ -244,7 +237,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify(topObj),
     });
     const data = await res.json();
-    //console.log(data);
+    //
     await fetchTop10();
   }
 
@@ -254,7 +247,7 @@ export const StateContextProvider = ({ children }) => {
       method: "GET",
     });
     const data = await res.json();
-    //console.log(data);
+    //
     const text = data?.data[0]?.text;
     text && setMarquee(text);
   }
@@ -271,7 +264,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify(marqueeObj),
     });
     const data = await res.json();
-    //console.log(data);
+    //
     await fetchMarquee();
   }
 
@@ -285,7 +278,7 @@ export const StateContextProvider = ({ children }) => {
       body: apkData,
     });
     const data = await res.json();
-    // console.log(data);
+    //
 
     await fetchApks();
   }
@@ -296,7 +289,7 @@ export const StateContextProvider = ({ children }) => {
       method: "GET",
     });
     const data = await res.json();
-    // console.log(data);
+    //
     const apkAllData = data.data;
     const apk1 = apkAllData.find((apk) => apk.name === "apk1");
     const apk2 = apkAllData.find((apk) => apk.name === "apk2");
@@ -322,7 +315,7 @@ export const StateContextProvider = ({ children }) => {
       body: adsData,
     });
     const data = await res.json();
-    // console.log(data);
+    //
     await fetchAds();
   }
 
@@ -336,7 +329,7 @@ export const StateContextProvider = ({ children }) => {
       body: adsData,
     });
     const data = await res.json();
-    // console.log(data);
+    //
     await fetchApkAds();
   }
 
@@ -346,7 +339,7 @@ export const StateContextProvider = ({ children }) => {
       method: "GET",
     });
     const data = await res.json();
-    // console.log(data.result);
+    // result);
     const allAds = data.data;
     setCarouselAdsArr(allAds);
 
@@ -358,9 +351,9 @@ export const StateContextProvider = ({ children }) => {
   // delete an ads
   async function deleteAds(id) {
     try {
-      //console.log(id);
+      //
       const obj = { id: id };
-      //console.log(obj);
+      //
       const res = await fetch(baseUrl + "/ads/", {
         method: "DELETE",
         headers: {
@@ -387,7 +380,7 @@ export const StateContextProvider = ({ children }) => {
       const dataArr = await res.json();
 
       const allAds = dataArr.data;
-      //console.log(dataArr);
+      //
       setApkAdsArr(allAds);
       const boxAds1 =
         allAds.length > 0 && allAds.find((ads) => ads.name === "boxad1");
@@ -433,9 +426,9 @@ export const StateContextProvider = ({ children }) => {
   }
   // Set For an Agent
   async function fetchPreset() {
-    //console.log(editNumber, selectedRewardId, selectedReward);
+    // selectedRewardId, selectedReward);
 
-    // console.log(neededData);
+    //
     const res = await fetch(baseUrl + "/luckyNumbers", {
       method: "POST",
       headers: {
@@ -449,7 +442,7 @@ export const StateContextProvider = ({ children }) => {
       }),
     });
     const data = await res.json();
-    //console.log(data);
+    //
     await fetchLuckyData();
     await fetchRewardData();
   }
@@ -466,7 +459,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify(agentData),
     });
     const data = await res.json();
-    //console.log(data);
+    //
     await fetchAgentsData();
   }
 
@@ -484,10 +477,10 @@ export const StateContextProvider = ({ children }) => {
       if (res.ok) {
         const data = await res.json();
         if (data.status === "succeed") {
-          // console.log(data.data.allLuckyNumber);
+          // data.allLuckyNumber);
           setLuckyData(data.data.allLuckyNumber);
         } else {
-          // console.log(data.message);
+          // message);
           alert(data.message);
         }
       } else {
@@ -509,22 +502,22 @@ export const StateContextProvider = ({ children }) => {
       },
     });
     const data = await res.json();
-    // console.log(data);
+    //
     if (data.status === "succeed") {
       setRewardReturnData(data.data.allRewards);
     } else {
-      console.log(data.message);
+      alert(data.message)
     }
     // const img = `${baseUrl}/`+ data.result[0].image;
 
-    // console.log(data.result);
+    // result);
   }
 
   // get reward for ui
   async function fetchRewardForUi() {
     const res = await fetch(`${baseUrl}/reward/uiReward`);
     const data = await res.json();
-    // console.log(data);
+    //
     setUiReward(data.allRewards);
   }
 
@@ -538,7 +531,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify({ id: data._id }),
     });
     const resData = res.json();
-    //console.log(resData);
+    //
     await getReportForAgent();
   }
 
@@ -553,13 +546,13 @@ export const StateContextProvider = ({ children }) => {
       },
     });
     const data = await res.json();
-    // console.log(data);
+    //
     if (data.status === "succeed") {
       setReportData(data.allReports);
     } else {
       alert(data.message);
     }
-    // console.log(data);
+    //
   }
   // get report for agent
   async function getReportForAgent() {
@@ -570,7 +563,7 @@ export const StateContextProvider = ({ children }) => {
       },
     });
     const data = await res.json();
-    // console.log(data);
+    //
     if (data.status === "succeed") {
       setReportData(data.returnReports);
     } else {
@@ -627,7 +620,7 @@ export const StateContextProvider = ({ children }) => {
   }, []);
   // // function for each button
   async function banHandler(id) {
-    //console.log(data);
+    //
     const res = await fetch(`${baseUrl}/luckyNumbers`, {
       method: "PUT",
       headers: {
@@ -636,14 +629,14 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify({ id }),
     });
     const resData = await res.json();
-    //console.log(resData);
+    //
     await fetchLuckyData();
     await fetchRewardData();
   }
 
   // lucky number change handler
   async function changeHandler(data) {
-    // console.log(data._id);
+    // _id);
     const res = await fetch(`${baseUrl}/luckyNumbers`, {
       method: "PATCH",
       headers: {
@@ -653,7 +646,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify({ id: data._id }),
     });
     const resData = await res.json();
-    // console.log(resData);
+    //
     await fetchLuckyData();
     await fetchRewardData();
   }
@@ -667,11 +660,11 @@ export const StateContextProvider = ({ children }) => {
       },
     });
     const data = await res.json();
-    // console.log(data);
+    //
     if (data.status === "succeed") {
       setAgentReturnData(data.allAgents);
     } else {
-      console.log("Something went wrong");
+       alert("Something went wrong");
     }
   }
 
@@ -698,10 +691,10 @@ export const StateContextProvider = ({ children }) => {
         await getLoginUserData(token, user);
       } else {
         setLoadingStatus(false);
-        console.log(jsonData.message);
+
       }
     } catch (err) {
-      console.log(err, "Request Failed");
+      alert( "Request Failed");
     } finally {
       setLoadingStatus(false);
     }
@@ -730,7 +723,7 @@ export const StateContextProvider = ({ children }) => {
       window.localStorage.setItem("token", token);
       window.localStorage.setItem("user", JSON.stringify(userData.user));
     }
-    // console.log(userData);
+    //
   }
 
   // working with Token and user
@@ -738,7 +731,7 @@ export const StateContextProvider = ({ children }) => {
     const token = window.localStorage.getItem("token");
     const user = JSON?.parse(window.localStorage.getItem("user"));
 
-    // console.log(user);
+    //
     if (token) {
       getLoginUserData(token, user);
       // setToken(token);
@@ -761,22 +754,22 @@ export const StateContextProvider = ({ children }) => {
       },
     });
     const data = await res.json();
-    console.log(data.updatedLucky);
+
     if (data.status === "Succeed") {
       setReqNum(data.updatedLucky);
       // await createReport(data.updatedLucky._id);
     } else {
-      console.log(data.message);
+      alert(data.message);
     }
 
-    //console.log(neededData);
+    //
 
     await getReportForAgent();
   }
 
   // delete reward and its relating luckyNumbers
   async function rewardDel(id) {
-    // console.log(id);
+    //
     const res = await fetch(`${baseUrl}/reward`, {
       method: "DELETE",
       headers: {
@@ -786,7 +779,7 @@ export const StateContextProvider = ({ children }) => {
       body: JSON.stringify({ id }),
     });
     const resData = await res.json();
-    //console.log(resData);
+    //
     await fetchRewardData();
     await fetchLuckyData();
     await fetchReportsForAdmin();
